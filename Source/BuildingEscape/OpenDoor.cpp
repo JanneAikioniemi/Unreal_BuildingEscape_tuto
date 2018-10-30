@@ -25,7 +25,7 @@ void UOpenDoor::BeginPlay()
 	AActor* Owner = GetOwner();
 
 	// Create a rotator
-	FRotator NewRotation = FRotator(0.f, Owner->GetActorRotation().Yaw - 90.f, 0.f);
+	FRotator NewRotation = FRotator(0.f, Owner->GetActorRotation().Yaw - OpenAngle, 0.f);
 
 	// Set rotation
 	Owner->SetActorRotation(NewRotation, ETeleportType::None);
