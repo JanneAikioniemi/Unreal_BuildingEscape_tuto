@@ -27,8 +27,6 @@ void UOpenDoor::BeginPlay()
 
 void UOpenDoor::OpenDoor()
 {
-	UE_LOG(LogTemp, Warning, TEXT("OpenDoor"));
-	// Set rotation
 	Owner->SetActorRotation(FRotator(0.f, OpenedAngle, 0.f));
 
 	IsDoorOpen = true;
@@ -36,8 +34,6 @@ void UOpenDoor::OpenDoor()
 
 void UOpenDoor::CloseDoor()
 {
-	UE_LOG(LogTemp, Warning, TEXT("CloseDoor"));
-	// Set rotation
 	Owner->SetActorRotation(FRotator(0.f, ClosedAngle, 0.f));
 
 	IsDoorOpen = false;
